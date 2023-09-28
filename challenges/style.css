@@ -14,8 +14,19 @@ body {
     margin-right: auto;
 }
 
+.pl-hero {
+    padding-left: 5.6%;
+}
+
+.mt-hero {
+    margin-top: 30px;
+}
+
 @media (min-width: 1400px) {
     .pl-hero {
         padding-left: 9.6%;
+    }
+    .mt-hero {
+        margin-top: 60px;
     }
 }
