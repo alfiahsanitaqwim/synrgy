@@ -1,5 +1,21 @@
-* {
-    margin: 0;
+body {
     padding: 0;
 }
 
+
+.logo {
+    width: 100px;
+    height: 34px;
+}
+
+.card-alfi {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1400px) {
+    .pl-hero {
+        padding-left: 9.6%;
+    }
+}
