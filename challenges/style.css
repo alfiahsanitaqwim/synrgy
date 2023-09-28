@@ -15,7 +15,7 @@ body {
 }
 
 .pl-hero {
-    padding-left: 5.6%;
+    padding-left: 1.0%;
 }
 
 .mt-hero {
@@ -26,6 +26,7 @@ body {
     .pl-hero {
         padding-left: 9.6%;
     }
+
     .mt-hero {
         margin-top: 60px;
     }
