@@ -16,12 +16,35 @@ class App {
   }
 
   search = () => {
-    const carType = this.carType.value
+    // const carType = this.carType.value;
     const capacityFilter = document.getElementById("capacity").value; 
     const carsDataString = localStorage.getItem("CARS")
     const carsData = JSON.parse(carsDataString);
 
-    // let datas = carsData?.filter((dt) => dt?.driverType?.toLowerCase() === carType?.toLowerCase())
+    const driverType = document.getElementById("driverType");
+    const time = document.getElementById("time");
+    const date = document.getElementById("date");
+    const capacity = document.getElementById("capacity");
+
+    const driverTypeVal = driverType.value;
+    const timeVal = time.value;
+    const dateVal = date.value;
+
+    // Validasi input
+    // if (driverTypeVal && timeVal && dateVal) {
+    //   this.loadButton.removeAttribute("disabled");
+    // } else {
+    //   this.loadButton.setAttribute("disabled", true);
+    // }
+
+    function validInput() {
+      if (driverTypeVal !== "" && availabilityVal !== "" && capacityVal !== ""){
+          search.removeAttribute("disabled");
+      } else{
+          search.removeAttribute("disabled", true);
+      }
+  }
+
     let datas = carsData?.filter((dt) => {
       const matchesCarType = dt?.driverType?.toLowerCase() === carType?.toLowerCase();
       const matchesAvailable = dt?.available === true;
@@ -36,30 +59,25 @@ class App {
       // console.log("ccc", car);
 
       const carElement = document.createElement("div");
-      carElement.classList.add("car"); // Tambahkan kelas CSS jika diperlukan
+      carElement.classList.add("car"); 
 
-      // Tambahkan gambar mobil ke dalam elemen
       const carImage = document.createElement("img");
       // console.log("sss", `${car.image}`);
-      carImage.src = "https://i.ibb.co/c2VbWBV/img-car.png"; // Sesuaikan dengan properti mobil Anda yang berisi URL gambar
+      carImage.src = "https://i.ibb.co/c2VbWBV/img-car.png";
       carElement.appendChild(carImage);
 
-
-      // Tambahkan nama dan merek (brand) mobil ke dalam elemen
       const carInfo = document.createElement("div");
-      carInfo.classList.add("car-info"); // Tambahkan kelas CSS untuk styling
-      carInfo.innerText = `${car.plate} - ${car.model}`; // Sesuaikan dengan properti mobil Anda
+      carInfo.classList.add("car-info"); 
+      carInfo.innerText = `${car.plate} - ${car.model}`; 
       carElement.appendChild(carInfo);
 
-
-      // Tambahkan nama dan merek (brand) mobil ke dalam elemen
       const footerCardContoh = document.createElement("div");
-      footerCardContoh.classList.add("car-contoh"); // Tambahkan kelas CSS untuk styling
-      footerCardContoh.innerText = `${car.plate}`; // Sesuaikan dengan properti mobil Anda
+      footerCardContoh.classList.add("car-contoh"); 
+      footerCardContoh.innerText = `${car.plate}`; 
       carElement.appendChild(footerCardContoh);
 
-      // Tambahkan elemen mobil ke dalam kontainer mobil
-      document.getElementById("alfi").appendChild(carElement);
+      // Tambahkan elemen car ke car container
+      document.getElementById("show").appendChild(carElement);
     });
   };
 

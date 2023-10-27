@@ -12,12 +12,12 @@ console.log("ss", "sss");
 
 function validInput() {
     if (driverTypeVal !== "" && availabilityVal !== "" && capacityVal !== ""){
-        search.removeAttribute("disabled");
+        btnSubmit.removeAttribute("disabled");
     } else{
-        search.removeAttribute("disabled", true);
+        btnSubmit.removeAttribute("disabled", true);
     }
 }
 
-search.onClick = () => {
+btnSubmit.onClick = () => {
     result.innerText = 'mobil yang dicari adalah ${carTypeVal} yang sedang ${availabilityVal} dan total penumpang sebanyak ${totalPenumpangVal} orang';
 }
