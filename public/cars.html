@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars</title>
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .kotakku {
+            display: flex;
+            padding: 20px;
+            background-color: orange;
+        }
+        /* Tambahkan gaya CSS untuk car-container dan car-info sesuai kebutuhan Anda */
+        .car {
+            margin-bottom: 20px;
+            display: flex;
+            background-color: red;
+            justify-content: center;
+        }
+        .car col {
+            float: left;
+            width: 33.33%;
+        }
+
+        .car img {
+            width: 200px;
+            /* Sesuaikan ukuran gambar mobil sesuai kebutuhan */
+            height: auto;
+        }
+
+        .car-info {
+            font-weight: bold;
+            margin-top: 10px;
+            background-color:  #0D28A6;
+            color: #5CB85F;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="background-color: #F1F3FF">
+        <!-- Header -->
+        <header class="card-sizing">
+            <div class="row">
+                <div class="ms-4 ms-lg-5 mt-hero mt-4 " style="background-color: #0D28A6; height: 34px; width: 100px;">
+                </div>
+                <div class="col d-flex justify-content-end d-lg-none">
+                    <div class="btn-group mt-4">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#navbarNavDarkDropstart" aria-controls="navbarNavDarkDropstart"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M3 18H21" stroke="#222222" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M3 12H21" stroke="#222222" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M3 6H21" stroke="#222222" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col justify-content-end d-none d-lg-flex mt-4 me-5">
+                    <div class="d-flex">
+                        <div><a class="nav-link text-reset" href="#">Our Services</a></div>
+                        <div><a class="nav-link text-reset" href="#">Why Us</a></div>
+                        <div><a class="nav-link text-reset" href="#">Testimony</a></div>
+                        <div><a class="nav-link text-reset" href="#">FAQ</a></div>
+                        <div><a class="btn" href="#" style="background-color: #5CB85F; color: white;">Register</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navbar -->
+            <div class="container">
+                <div class="offcanvas offcanvas-end" style="width: 60vw;" tabindex="-1" id="navbarNavDarkDropstart">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">BCR</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div style="margin-left: -16px;">
+                            <div><a class="nav-link text-reset" href="#">Our Services</a></div>
+                            <div><a class="nav-link text-reset" href="#">Why Us</a></div>
+                            <div><a class="nav-link text-reset" href="#">Testimony</a></div>
+                            <div><a class="nav-link text-reset" href="#">FAQ</a></div>
+                            <div style="padding-left: 16px; margin-top: 10px;"><a class="btn" href="#"
+                                    style="background-color: #5CB85F; color: white;">Register</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div>
+            <div class="row">
+                <div class="col-12 col-md-6 pl-hero">
+                    <div class="pt-5 px-4"
+                        style="font-size: 36px; font-style:normal; font-weight:700; line-height:150%;">
+                        Sewa & Rental Mobil Terbaik di Kawasan (Lokasimu)
+                    </div>
+                    <div class="pt-3 px-4"
+                        style="font-size: 14px; font-style:normal; font-weight:300; line-height: 20px;">
+                        Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dnegan harga
+                        terjangkau.
+                        Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-5 mt-lg-0">
+                    <div class="pt-4 d-flex flex-column justify-content-end" style="padding: 0;">
+                        <img src="https://i.ibb.co/c2VbWBV/img-car.png" alt="img-car">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container1 d-flex justify-content-center">
+        <div class="container2 p-5 with-border" style="width: 1180px;">
+            <div class="row">
+                <div class="mb-3 col-2">
+                    <label for="formControlInput" class="form-label">Tipe Driver</label>
+                    <select id="carType" class="form-select table table-striped" id="driver" aria-label="Default select"
+                        placeholder="Pilih Tipe Driver ok">
+                        <option disabled>Pilih Tipe Driver</option>
+                        <option value="with_driver">Dengan Sopir</option>
+                        <option value="without_driver">Tanpa Sopir (Lepas Kunci)</option>
+                    </select>
+                </div>
+                <div class="mb-3 col-2">
+                    <label for="formControlInput" class="form-label">Tanggal</label>
+                    <input type="date" class="form-control" id="date" placeholder="Pilih Tanggal">
+                </div>
+                <div class="mb-3 col-3">
+                    <label for="formControlInput" class="form-label">Waktu Jemput/Ambil</label>
+                    <input type="time" class="form-control" id="time" placeholder="Pilih Waktu">
+                </div>
+                <div class="mb-3 col-4">
+                    <label for="formControlInput" class="form-label">Jumlah Penumpang (Opsional)</label>
+                    <input type="number" id="capacity" class="form-control" id="person" placeholder="Jumlah Penumpang">
+                </div>
+
+                <div class="col-1 align-item-bottom" style="padding-top: 35px;">
+                    <button id="search">Cari</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="alfi" class="grid-container"></div>
+    <div id="cars-container"></div>
+    <input type="checkbox" id="available"> Mobil Tersedia
+
+    <!-- <img src="/images/car01.min.jpg" alt="img-car"> -->
+    <!-- Container untuk menampilkan hasil filter -->
+
+    <!-- <div class="row">
+        <div class="col-4" id="cars-container"><img src="/images/car01.min.jpg" alt="img-car"> </div>
+        <div class="col-4" id="cars-container"><img src="/images/car01.min.jpg" alt="img-car"> </div>
+        <div class="col-4" id="cars-container"><img src="/images/car01.min.jpg" alt="img-car"></div>
+    </div> -->
+
+    <!-- <class="d-flex justify-content-center mt-5">
+        <class="row justify-content-between" style="width: 1180px;"> -->
+            <!-- Card 1 -->
+            <!-- <div class="card col-4" style="width: 18rem;">
+                <div id="cars-container">
+                    <img class="card-img-top" src="/images/car01.min.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div class="card-text mb-2">${carType}</div>
+                    <div class="mb-2"><b>Rp 430.000 / hari</b></div>
+                    <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="row d-flex mb-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M19.167 17.5V15.8333C19.1664 15.0948 18.9206 14.3773 18.4681 13.7936C18.0156 13.2099 17.3821 12.793 16.667 12.6083" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.1663 17.5V15.8333C14.1663 14.9493 13.8152 14.1014 13.19 13.4763C12.5649 12.8512 11.7171 12.5 10.833 12.5H4.16634C3.28229 12.5 2.43444 12.8512 1.80932 13.4763C1.1842 14.1014 0.833008 14.9493 0.833008 15.8333V17.5" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.333 2.60834C14.05 2.79192 14.6855 3.20892 15.1394 3.7936C15.5932 4.37827 15.8395 5.09736 15.8395 5.8375C15.8395 6.57765 15.5932 7.29674 15.1394 7.88141C14.6855 8.46609 14.05 8.88309 13.333 9.06667" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.50033 9.16667C9.34128 9.16667 10.8337 7.67428 10.8337 5.83333C10.8337 3.99238 9.34128 2.5 7.50033 2.5C5.65938 2.5 4.16699 3.99238 4.16699 5.83333C4.16699 7.67428 5.65938 9.16667 7.50033 9.16667Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="col-6">${capacity} orang</div>
+                    </div>
+                    <div class="row d-flex mb-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_22128_12390)">
+                                <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.1663 12.5C16.0554 12.7513 16.0223 13.0301 16.0713 13.3005C16.1204 13.5708 16.2492 13.8202 16.4413 14.0166L16.4913 14.0666C16.6463 14.2214 16.7692 14.4052 16.8531 14.6076C16.937 14.8099 16.9802 15.0268 16.9802 15.2458C16.9802 15.4648 16.937 15.6817 16.8531 15.884C16.7692 16.0864 16.6463 16.2702 16.4913 16.425C16.3366 16.5799 16.1527 16.7029 15.9504 16.7867C15.7481 16.8706 15.5312 16.9138 15.3122 16.9138C15.0931 16.9138 14.8763 16.8706 14.6739 16.7867C14.4716 16.7029 14.2878 16.5799 14.133 16.425L14.083 16.375C13.8866 16.1829 13.6372 16.054 13.3668 16.005C13.0965 15.956 12.8177 15.989 12.5663 16.1C12.3199 16.2056 12.1097 16.381 11.9616 16.6046C11.8135 16.8282 11.7341 17.0902 11.733 17.3583V17.5C11.733 17.942 11.5574 18.3659 11.2449 18.6785C10.9323 18.991 10.5084 19.1666 10.0663 19.1666C9.62431 19.1666 9.20039 18.991 8.88783 18.6785C8.57527 18.3659 8.39967 17.942 8.39967 17.5V17.425C8.39322 17.1491 8.30394 16.8816 8.14343 16.6572C7.98293 16.4328 7.75862 16.2619 7.49967 16.1666C7.24833 16.0557 6.96951 16.0226 6.69918 16.0716C6.42885 16.1207 6.17941 16.2495 5.98301 16.4416L5.93301 16.4916C5.77822 16.6466 5.5944 16.7695 5.39207 16.8534C5.18974 16.9373 4.97287 16.9805 4.75384 16.9805C4.53481 16.9805 4.31794 16.9373 4.11561 16.8534C3.91328 16.7695 3.72946 16.6466 3.57467 16.4916C3.41971 16.3369 3.29678 16.153 3.21291 15.9507C3.12903 15.7484 3.08586 15.5315 3.08586 15.3125C3.08586 15.0935 3.12903 14.8766 3.21291 14.6742C3.29678 14.4719 3.41971 14.2881 3.57467 14.1333L3.62467 14.0833C3.81679 13.8869 3.94566 13.6375 3.99468 13.3671C4.04369 13.0968 4.0106 12.818 3.89967 12.5666C3.79404 12.3202 3.61864 12.11 3.39506 11.9619C3.17149 11.8138 2.9095 11.7344 2.64134 11.7333H2.49967C2.05765 11.7333 1.63372 11.5577 1.32116 11.2452C1.0086 10.9326 0.833008 10.5087 0.833008 10.0666C0.833008 9.62462 1.0086 9.2007 1.32116 8.88813C1.63372 8.57557 2.05765 8.39998 2.49967 8.39998H2.57467C2.8505 8.39353 3.11801 8.30424 3.34242 8.14374C3.56684 7.98323 3.73777 7.75893 3.83301 7.49998C3.94394 7.24863 3.97703 6.96982 3.92801 6.69949C3.879 6.42916 3.75012 6.17971 3.55801 5.98331L3.50801 5.93331C3.35305 5.77852 3.23012 5.59471 3.14624 5.39238C3.06237 5.19005 3.0192 4.97317 3.0192 4.75415C3.0192 4.53512 3.06237 4.31824 3.14624 4.11591C3.23012 3.91358 3.35305 3.72977 3.50801 3.57498C3.6628 3.42002 3.84661 3.29709 4.04894 3.21321C4.25127 3.12934 4.46815 3.08617 4.68717 3.08617C4.9062 3.08617 5.12308 3.12934 5.32541 3.21321C5.52774 3.29709 5.71155 3.42002 5.86634 3.57498L5.91634 3.62498C6.11274 3.81709 6.36219 3.94597 6.63252 3.99498C6.90285 4.044 7.18166 4.01091 7.43301 3.89998H7.49967C7.74615 3.79434 7.95635 3.61894 8.10442 3.39537C8.25248 3.17179 8.33194 2.9098 8.33301 2.64165V2.49998C8.33301 2.05795 8.5086 1.63403 8.82116 1.32147C9.13372 1.00891 9.55765 0.833313 9.99967 0.833313C10.4417 0.833313 10.8656 1.00891 11.1782 1.32147C11.4907 1.63403 11.6663 2.05795 11.6663 2.49998V2.57498C11.6674 2.84313 11.7469 3.10513 11.8949 3.3287C12.043 3.55228 12.2532 3.72768 12.4997 3.83331C12.751 3.94424 13.0298 3.97733 13.3002 3.92832C13.5705 3.8793 13.8199 3.75043 14.0163 3.55831L14.0663 3.50831C14.2211 3.35335 14.4049 3.23042 14.6073 3.14655C14.8096 3.06267 15.0265 3.0195 15.2455 3.0195C15.4645 3.0195 15.6814 3.06267 15.8837 3.14655C16.0861 3.23042 16.2699 3.35335 16.4247 3.50831C16.5796 3.6631 16.7026 3.84692 16.7864 4.04925C16.8703 4.25158 16.9135 4.46845 16.9135 4.68748C16.9135 4.90651 16.8703 5.12338 16.7864 5.32571C16.7026 5.52804 16.5796 5.71186 16.4247 5.86665L16.3747 5.91665C16.1826 6.11305 16.0537 6.36249 16.0047 6.63282C15.9557 6.90315 15.9887 7.18197 16.0997 7.43331V7.49998C16.2053 7.74645 16.3807 7.95666 16.6043 8.10472C16.8279 8.25279 17.0899 8.33224 17.358 8.33331H17.4997C17.9417 8.33331 18.3656 8.50891 18.6782 8.82147C18.9907 9.13403 19.1663 9.55795 19.1663 9.99998C19.1663 10.442 18.9907 10.8659 18.6782 11.1785C18.3656 11.4911 17.9417 11.6666 17.4997 11.6666H17.4247C17.1565 11.6677 16.8945 11.7472 16.671 11.8952C16.4474 12.0433 16.272 12.2535 16.1663 12.5V12.5Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_22128_12390">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-6">${transmission}</div>
+                    </div>
+                    <div class="row d-flex mb-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 3.33331H4.16667C3.24619 3.33331 2.5 4.07951 2.5 4.99998V16.6666C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6666V4.99998C17.5 4.07951 16.7538 3.33331 15.8333 3.33331Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 8.33331H17.5" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.333 1.66669V5.00002" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.66699 1.66669V5.00002" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="col-6">tahun ${year}</div>
+                    </div>
+                    <div class="btn" href="#" style="background-color: #5CB85F; color: white; width: 14rem;">Pilih Mobil</div>
+                </div>
+            </div> -->
+
+            <!-- Card 2 -->
+            <!-- <div class="card col-4" style="width: 18rem;">
+                <div id="cars-container">
+                    <img class="card-img-top" src="/images/car01.min.jpg" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <div class="card-text mb-2">${carType}</div>
+                    <div class="mb-2"><b>Rp 430.000 / hari</b></div>
+                    <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="row d-flex mb-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M19.167 17.5V15.8333C19.1664 15.0948 18.9206 14.3773 18.4681 13.7936C18.0156 13.2099 17.3821 12.793 16.667 12.6083" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.1663 17.5V15.8333C14.1663 14.9493 13.8152 14.1014 13.19 13.4763C12.5649 12.8512 11.7171 12.5 10.833 12.5H4.16634C3.28229 12.5 2.43444 12.8512 1.80932 13.4763C1.1842 14.1014 0.833008 14.9493 0.833008 15.8333V17.5" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.333 2.60834C14.05 2.79192 14.6855 3.20892 15.1394 3.7936C15.5932 4.37827 15.8395 5.09736 15.8395 5.8375C15.8395 6.57765 15.5932 7.29674 15.1394 7.88141C14.6855 8.46609 14.05 8.88309 13.333 9.06667" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.50033 9.16667C9.34128 9.16667 10.8337 7.67428 10.8337 5.83333C10.8337 3.99238 9.34128 2.5 7.50033 2.5C5.65938 2.5 4.16699 3.99238 4.16699 5.83333C4.16699 7.67428 5.65938 9.16667 7.50033 9.16667Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="col-6">${capacity} orang</div>
+                    </div>
+                    <div class="row d-flex mb-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_22128_12390)">
+                                <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.1663 12.5C16.0554 12.7513 16.0223 13.0301 16.0713 13.3005C16.1204 13.5708 16.2492 13.8202 16.4413 14.0166L16.4913 14.0666C16.6463 14.2214 16.7692 14.4052 16.8531 14.6076C16.937 14.8099 16.9802 15.0268 16.9802 15.2458C16.9802 15.4648 16.937 15.6817 16.8531 15.884C16.7692 16.0864 16.6463 16.2702 16.4913 16.425C16.3366 16.5799 16.1527 16.7029 15.9504 16.7867C15.7481 16.8706 15.5312 16.9138 15.3122 16.9138C15.0931 16.9138 14.8763 16.8706 14.6739 16.7867C14.4716 16.7029 14.2878 16.5799 14.133 16.425L14.083 16.375C13.8866 16.1829 13.6372 16.054 13.3668 16.005C13.0965 15.956 12.8177 15.989 12.5663 16.1C12.3199 16.2056 12.1097 16.381 11.9616 16.6046C11.8135 16.8282 11.7341 17.0902 11.733 17.3583V17.5C11.733 17.942 11.5574 18.3659 11.2449 18.6785C10.9323 18.991 10.5084 19.1666 10.0663 19.1666C9.62431 19.1666 9.20039 18.991 8.88783 18.6785C8.57527 18.3659 8.39967 17.942 8.39967 17.5V17.425C8.39322 17.1491 8.30394 16.8816 8.14343 16.6572C7.98293 16.4328 7.75862 16.2619 7.49967 16.1666C7.24833 16.0557 6.96951 16.0226 6.69918 16.0716C6.42885 16.1207 6.17941 16.2495 5.98301 16.4416L5.93301 16.4916C5.77822 16.6466 5.5944 16.7695 5.39207 16.8534C5.18974 16.9373 4.97287 16.9805 4.75384 16.9805C4.53481 16.9805 4.31794 16.9373 4.11561 16.8534C3.91328 16.7695 3.72946 16.6466 3.57467 16.4916C3.41971 16.3369 3.29678 16.153 3.21291 15.9507C3.12903 15.7484 3.08586 15.5315 3.08586 15.3125C3.08586 15.0935 3.12903 14.8766 3.21291 14.6742C3.29678 14.4719 3.41971 14.2881 3.57467 14.1333L3.62467 14.0833C3.81679 13.8869 3.94566 13.6375 3.99468 13.3671C4.04369 13.0968 4.0106 12.818 3.89967 12.5666C3.79404 12.3202 3.61864 12.11 3.39506 11.9619C3.17149 11.8138 2.9095 11.7344 2.64134 11.7333H2.49967C2.05765 11.7333 1.63372 11.5577 1.32116 11.2452C1.0086 10.9326 0.833008 10.5087 0.833008 10.0666C0.833008 9.62462 1.0086 9.2007 1.32116 8.88813C1.63372 8.57557 2.05765 8.39998 2.49967 8.39998H2.57467C2.8505 8.39353 3.11801 8.30424 3.34242 8.14374C3.56684 7.98323 3.73777 7.75893 3.83301 7.49998C3.94394 7.24863 3.97703 6.96982 3.92801 6.69949C3.879 6.42916 3.75012 6.17971 3.55801 5.98331L3.50801 5.93331C3.35305 5.77852 3.23012 5.59471 3.14624 5.39238C3.06237 5.19005 3.0192 4.97317 3.0192 4.75415C3.0192 4.53512 3.06237 4.31824 3.14624 4.11591C3.23012 3.91358 3.35305 3.72977 3.50801 3.57498C3.6628 3.42002 3.84661 3.29709 4.04894 3.21321C4.25127 3.12934 4.46815 3.08617 4.68717 3.08617C4.9062 3.08617 5.12308 3.12934 5.32541 3.21321C5.52774 3.29709 5.71155 3.42002 5.86634 3.57498L5.91634 3.62498C6.11274 3.81709 6.36219 3.94597 6.63252 3.99498C6.90285 4.044 7.18166 4.01091 7.43301 3.89998H7.49967C7.74615 3.79434 7.95635 3.61894 8.10442 3.39537C8.25248 3.17179 8.33194 2.9098 8.33301 2.64165V2.49998C8.33301 2.05795 8.5086 1.63403 8.82116 1.32147C9.13372 1.00891 9.55765 0.833313 9.99967 0.833313C10.4417 0.833313 10.8656 1.00891 11.1782 1.32147C11.4907 1.63403 11.6663 2.05795 11.6663 2.49998V2.57498C11.6674 2.84313 11.7469 3.10513 11.8949 3.3287C12.043 3.55228 12.2532 3.72768 12.4997 3.83331C12.751 3.94424 13.0298 3.97733 13.3002 3.92832C13.5705 3.8793 13.8199 3.75043 14.0163 3.55831L14.0663 3.50831C14.2211 3.35335 14.4049 3.23042 14.6073 3.14655C14.8096 3.06267 15.0265 3.0195 15.2455 3.0195C15.4645 3.0195 15.6814 3.06267 15.8837 3.14655C16.0861 3.23042 16.2699 3.35335 16.4247 3.50831C16.5796 3.6631 16.7026 3.84692 16.7864 4.04925C16.8703 4.25158 16.9135 4.46845 16.9135 4.68748C16.9135 4.90651 16.8703 5.12338 16.7864 5.32571C16.7026 5.52804 16.5796 5.71186 16.4247 5.86665L16.3747 5.91665C16.1826 6.11305 16.0537 6.36249 16.0047 6.63282C15.9557 6.90315 15.9887 7.18197 16.0997 7.43331V7.49998C16.2053 7.74645 16.3807 7.95666 16.6043 8.10472C16.8279 8.25279 17.0899 8.33224 17.358 8.33331H17.4997C17.9417 8.33331 18.3656 8.50891 18.6782 8.82147C18.9907 9.13403 19.1663 9.55795 19.1663 9.99998C19.1663 10.442 18.9907 10.8659 18.6782 11.1785C18.3656 11.4911 17.9417 11.6666 17.4997 11.6666H17.4247C17.1565 11.6677 16.8945 11.7472 16.671 11.8952C16.4474 12.0433 16.272 12.2535 16.1663 12.5V12.5Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_22128_12390">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-6">${transmission}</div>
+                    </div>
+                    <div class="row d-flex mb-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 3.33331H4.16667C3.24619 3.33331 2.5 4.07951 2.5 4.99998V16.6666C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6666V4.99998C17.5 4.07951 16.7538 3.33331 15.8333 3.33331Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 8.33331H17.5" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.333 1.66669V5.00002" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.66699 1.66669V5.00002" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="col-6">tahun ${year}</div>
+                    </div>
+                    <div class="btn" href="#" style="background-color: #5CB85F; color: white; width: 14rem;">Pilih Mobil</div>
+                </div>
+            </div> -->
+
+            <!-- Card 3 -->
+            <!-- <div class="card col-4" style="width: 18rem;">
+                <div id="cars-container"></div>
+                <div class="card-body">
+                    <div class="card-text mb-2">${carType}</div>
+                    <div class="mb-2"><b>Rp 430.000 / hari</b></div>
+                    <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    <div class="row d-flex mb-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M19.167 17.5V15.8333C19.1664 15.0948 18.9206 14.3773 18.4681 13.7936C18.0156 13.2099 17.3821 12.793 16.667 12.6083" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.1663 17.5V15.8333C14.1663 14.9493 13.8152 14.1014 13.19 13.4763C12.5649 12.8512 11.7171 12.5 10.833 12.5H4.16634C3.28229 12.5 2.43444 12.8512 1.80932 13.4763C1.1842 14.1014 0.833008 14.9493 0.833008 15.8333V17.5" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.333 2.60834C14.05 2.79192 14.6855 3.20892 15.1394 3.7936C15.5932 4.37827 15.8395 5.09736 15.8395 5.8375C15.8395 6.57765 15.5932 7.29674 15.1394 7.88141C14.6855 8.46609 14.05 8.88309 13.333 9.06667" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.50033 9.16667C9.34128 9.16667 10.8337 7.67428 10.8337 5.83333C10.8337 3.99238 9.34128 2.5 7.50033 2.5C5.65938 2.5 4.16699 3.99238 4.16699 5.83333C4.16699 7.67428 5.65938 9.16667 7.50033 9.16667Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="col-6">${capacity} orang</div>
+                    </div>
+                    <div class="row d-flex mb-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <g clip-path="url(#clip0_22128_12390)">
+                                <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.1663 12.5C16.0554 12.7513 16.0223 13.0301 16.0713 13.3005C16.1204 13.5708 16.2492 13.8202 16.4413 14.0166L16.4913 14.0666C16.6463 14.2214 16.7692 14.4052 16.8531 14.6076C16.937 14.8099 16.9802 15.0268 16.9802 15.2458C16.9802 15.4648 16.937 15.6817 16.8531 15.884C16.7692 16.0864 16.6463 16.2702 16.4913 16.425C16.3366 16.5799 16.1527 16.7029 15.9504 16.7867C15.7481 16.8706 15.5312 16.9138 15.3122 16.9138C15.0931 16.9138 14.8763 16.8706 14.6739 16.7867C14.4716 16.7029 14.2878 16.5799 14.133 16.425L14.083 16.375C13.8866 16.1829 13.6372 16.054 13.3668 16.005C13.0965 15.956 12.8177 15.989 12.5663 16.1C12.3199 16.2056 12.1097 16.381 11.9616 16.6046C11.8135 16.8282 11.7341 17.0902 11.733 17.3583V17.5C11.733 17.942 11.5574 18.3659 11.2449 18.6785C10.9323 18.991 10.5084 19.1666 10.0663 19.1666C9.62431 19.1666 9.20039 18.991 8.88783 18.6785C8.57527 18.3659 8.39967 17.942 8.39967 17.5V17.425C8.39322 17.1491 8.30394 16.8816 8.14343 16.6572C7.98293 16.4328 7.75862 16.2619 7.49967 16.1666C7.24833 16.0557 6.96951 16.0226 6.69918 16.0716C6.42885 16.1207 6.17941 16.2495 5.98301 16.4416L5.93301 16.4916C5.77822 16.6466 5.5944 16.7695 5.39207 16.8534C5.18974 16.9373 4.97287 16.9805 4.75384 16.9805C4.53481 16.9805 4.31794 16.9373 4.11561 16.8534C3.91328 16.7695 3.72946 16.6466 3.57467 16.4916C3.41971 16.3369 3.29678 16.153 3.21291 15.9507C3.12903 15.7484 3.08586 15.5315 3.08586 15.3125C3.08586 15.0935 3.12903 14.8766 3.21291 14.6742C3.29678 14.4719 3.41971 14.2881 3.57467 14.1333L3.62467 14.0833C3.81679 13.8869 3.94566 13.6375 3.99468 13.3671C4.04369 13.0968 4.0106 12.818 3.89967 12.5666C3.79404 12.3202 3.61864 12.11 3.39506 11.9619C3.17149 11.8138 2.9095 11.7344 2.64134 11.7333H2.49967C2.05765 11.7333 1.63372 11.5577 1.32116 11.2452C1.0086 10.9326 0.833008 10.5087 0.833008 10.0666C0.833008 9.62462 1.0086 9.2007 1.32116 8.88813C1.63372 8.57557 2.05765 8.39998 2.49967 8.39998H2.57467C2.8505 8.39353 3.11801 8.30424 3.34242 8.14374C3.56684 7.98323 3.73777 7.75893 3.83301 7.49998C3.94394 7.24863 3.97703 6.96982 3.92801 6.69949C3.879 6.42916 3.75012 6.17971 3.55801 5.98331L3.50801 5.93331C3.35305 5.77852 3.23012 5.59471 3.14624 5.39238C3.06237 5.19005 3.0192 4.97317 3.0192 4.75415C3.0192 4.53512 3.06237 4.31824 3.14624 4.11591C3.23012 3.91358 3.35305 3.72977 3.50801 3.57498C3.6628 3.42002 3.84661 3.29709 4.04894 3.21321C4.25127 3.12934 4.46815 3.08617 4.68717 3.08617C4.9062 3.08617 5.12308 3.12934 5.32541 3.21321C5.52774 3.29709 5.71155 3.42002 5.86634 3.57498L5.91634 3.62498C6.11274 3.81709 6.36219 3.94597 6.63252 3.99498C6.90285 4.044 7.18166 4.01091 7.43301 3.89998H7.49967C7.74615 3.79434 7.95635 3.61894 8.10442 3.39537C8.25248 3.17179 8.33194 2.9098 8.33301 2.64165V2.49998C8.33301 2.05795 8.5086 1.63403 8.82116 1.32147C9.13372 1.00891 9.55765 0.833313 9.99967 0.833313C10.4417 0.833313 10.8656 1.00891 11.1782 1.32147C11.4907 1.63403 11.6663 2.05795 11.6663 2.49998V2.57498C11.6674 2.84313 11.7469 3.10513 11.8949 3.3287C12.043 3.55228 12.2532 3.72768 12.4997 3.83331C12.751 3.94424 13.0298 3.97733 13.3002 3.92832C13.5705 3.8793 13.8199 3.75043 14.0163 3.55831L14.0663 3.50831C14.2211 3.35335 14.4049 3.23042 14.6073 3.14655C14.8096 3.06267 15.0265 3.0195 15.2455 3.0195C15.4645 3.0195 15.6814 3.06267 15.8837 3.14655C16.0861 3.23042 16.2699 3.35335 16.4247 3.50831C16.5796 3.6631 16.7026 3.84692 16.7864 4.04925C16.8703 4.25158 16.9135 4.46845 16.9135 4.68748C16.9135 4.90651 16.8703 5.12338 16.7864 5.32571C16.7026 5.52804 16.5796 5.71186 16.4247 5.86665L16.3747 5.91665C16.1826 6.11305 16.0537 6.36249 16.0047 6.63282C15.9557 6.90315 15.9887 7.18197 16.0997 7.43331V7.49998C16.2053 7.74645 16.3807 7.95666 16.6043 8.10472C16.8279 8.25279 17.0899 8.33224 17.358 8.33331H17.4997C17.9417 8.33331 18.3656 8.50891 18.6782 8.82147C18.9907 9.13403 19.1663 9.55795 19.1663 9.99998C19.1663 10.442 18.9907 10.8659 18.6782 11.1785C18.3656 11.4911 17.9417 11.6666 17.4997 11.6666H17.4247C17.1565 11.6677 16.8945 11.7472 16.671 11.8952C16.4474 12.0433 16.272 12.2535 16.1663 12.5V12.5Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_22128_12390">
+                                    <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="col-6">${transmission}</div>
+                    </div>
+                    <div class="row d-flex mb-2">
+                        <div class="col-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M15.8333 3.33331H4.16667C3.24619 3.33331 2.5 4.07951 2.5 4.99998V16.6666C2.5 17.5871 3.24619 18.3333 4.16667 18.3333H15.8333C16.7538 18.3333 17.5 17.5871 17.5 16.6666V4.99998C17.5 4.07951 16.7538 3.33331 15.8333 3.33331Z" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.5 8.33331H17.5" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.333 1.66669V5.00002" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.66699 1.66669V5.00002" stroke="#8A8A8A" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="col-6">tahun ${year}</div>
+                    </div>
+                    <div class="btn" href="#" style="background-color: #5CB85F; color: white; width: 14rem;">Pilih Mobil</div>
+                </div>
+            </div>
+        </div> -->
+    <!-- </div> -->
+
+
+    <div class="card-sizing row mt-5 p-lg-4" style="margin-bottom:100px;">
+        <div class="col-12 col-lg-3 mt-4">
+            <p style="margin-bottom: 16px; font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;">
+                Jalan Suroyo No. 161 Mayangan Kota Probolinggo</p>
+            <p style="margin-bottom: 16px; font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;">
+                binarcarrental@gmail.com</p>
+            <p style="font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;">081-233-334-808</p>
+        </div>
+        <div class="col-12 col-lg-3 mt-4">
+            <p style="margin-bottom: 16px; font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;">
+                Our services</p>
+            <p style="margin-bottom: 16px; font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;">
+                Why Us</p>
+            <p style="margin-bottom: 16px; font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;">
+                Testimonial</p>
+            <p style="font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;">
+                FAQ</p>
+        </div>
+        <div class="col-12 col-lg-3 mt-4">
+            <p style="font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;">Contact with Us</p>
+            <div class="row d-flex">
+                <div class="col-auto">
+                    <svg xmlns=" http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#0D28A6" />
+                        <g transform="translate(6, 6)">
+                            <path
+                                d="M15 1.66663H12.5C11.395 1.66663 10.3352 2.10561 9.55376 2.88701C8.77236 3.66842 8.33337 4.72822 8.33337 5.83329V8.33329H5.83337V11.6666H8.33337V18.3333H11.6667V11.6666H14.1667L15 8.33329H11.6667V5.83329C11.6667 5.61228 11.7545 5.40032 11.9108 5.24404C12.0671 5.08776 12.279 4.99996 12.5 4.99996H15V1.66663Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-auto">
+                    <svg xmlns=" http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#0D28A6" />
+                        <g transform="translate(6, 6)">
+                            <path
+                                d="M14.1666 1.66663H5.83329C3.53211 1.66663 1.66663 3.53211 1.66663 5.83329V14.1666C1.66663 16.4678 3.53211 18.3333 5.83329 18.3333H14.1666C16.4678 18.3333 18.3333 16.4678 18.3333 14.1666V5.83329C18.3333 3.53211 16.4678 1.66663 14.1666 1.66663Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13.3334 9.47501C13.4362 10.1685 13.3178 10.8769 12.9948 11.4992C12.6719 12.1215 12.161 12.6262 11.5347 12.9414C10.9085 13.2566 10.1987 13.3663 9.50653 13.2549C8.81431 13.1436 8.17484 12.8167 7.67907 12.321C7.1833 11.8252 6.85648 11.1857 6.7451 10.4935C6.63371 9.8013 6.74343 9.09159 7.05865 8.46532C7.37386 7.83905 7.87853 7.32812 8.50086 7.00521C9.12319 6.68229 9.8315 6.56383 10.525 6.66667C11.2325 6.77158 11.8874 7.10123 12.3931 7.60693C12.8988 8.11263 13.2285 8.76757 13.3334 9.47501Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.5834 5.41663H14.5917" stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                    </svg>
+                    </g>
+                    </svg>
+                </div>
+                <div class="col-auto">
+                    <svg xmlns=" http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#0D28A6" />
+                        <g transform="translate(6, 6)">
+                            <path
+                                d="M19.1667 2.49996C18.3687 3.06285 17.4851 3.49338 16.55 3.77496C16.0482 3.19788 15.3812 2.78887 14.6392 2.60323C13.8973 2.41759 13.1163 2.46429 12.4018 2.737C11.6873 3.00972 11.0737 3.49529 10.6442 4.12805C10.2146 4.76082 9.98979 5.51024 10 6.27496V7.10829C8.53557 7.14626 7.08444 6.82147 5.77588 6.16283C4.46733 5.50419 3.34197 4.53215 2.50004 3.33329C2.50004 3.33329 -0.833292 10.8333 6.66671 14.1666C4.95048 15.3316 2.906 15.9157 0.833374 15.8333C8.33337 20 17.5 15.8333 17.5 6.24996C17.4993 6.01783 17.477 5.78629 17.4334 5.55829C18.2839 4.71953 18.8841 3.66055 19.1667 2.49996V2.49996Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-auto">
+                    <svg xmlns=" http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#0D28A6" />
+                        <g transform="translate(6, 6)">
+                            <path
+                                d="M3.33329 3.33337H16.6666C17.5833 3.33337 18.3333 4.08337 18.3333 5.00004V15C18.3333 15.9167 17.5833 16.6667 16.6666 16.6667H3.33329C2.41663 16.6667 1.66663 15.9167 1.66663 15V5.00004C1.66663 4.08337 2.41663 3.33337 3.33329 3.33337Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.3333 5L9.99996 10.8333L1.66663 5" stroke="white" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="col-auto">
+                    <svg xmlns=" http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="16" fill="#0D28A6" />
+                        <g transform="translate(6, 6)">
+                            <path
+                                d="M13.3333 9.16663V5.83329M17.5 1.66663H2.5V15H6.66667V18.3333L10 15H14.1667L17.5 11.6666V1.66663ZM9.16667 9.16663V5.83329V9.16663Z"
+                                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-3 mt-4">
+            <div style="margin-bottom: 16px; font-size: 14px; font-style: normal; font-weight: 400; line-height: 20px;">
+                Copyright Binar 2022</div>
+            <div style="background-color: #0D28A6; height: 34px; width: 100px;"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+</body>
+
+</html>

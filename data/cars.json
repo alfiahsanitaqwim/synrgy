@@ -12,6 +12,7 @@
     "transmission": "Automatic",
     "available": true,
     "type": "Sedan",
+    "diverType": "Lepas Kunci",
     "year": 2022,
     "options": [
       "Cruise Control",
@@ -42,6 +43,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Convertible",
+    "diverType": "Dengan Sopir",
     "year": 2019,
     "options": [
       "Keyless Entry",
@@ -71,6 +73,7 @@
     "transmission": "Automanual",
     "available": true,
     "type": "Sedan",
+    "diverType": "Lepas Kunci",
     "year": 2021,
     "options": [
       "Bucket Seats",
@@ -105,6 +108,7 @@
     "transmission": "Manual",
     "available": true,
     "type": "Hatchback",
+    "diverType": "Dengan Sopir",
     "year": 2018,
     "options": [
       "Alloy Wheels",
@@ -139,6 +143,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Minivan",
+    "diverType": "Lepas Kunci",
     "year": 2020,
     "options": [
       "CD (Multi Disc)",
@@ -168,6 +173,7 @@
     "transmission": "Automanual",
     "available": true,
     "type": "Hatchback",
+    "diverType": "Dengan Sopir",
     "year": 2016,
     "options": [
       "Leather Interior",
@@ -198,6 +204,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Sedan",
+    "diverType": "Lepas Kunci",
     "year": 2020,
     "options": [
       "AM/FM Stereo",
@@ -232,6 +239,7 @@
     "available": true,
     "type": "Regular Cab Pickup",
     "year": 2014,
+    "diverType": "Lepas Kunci",
     "options": [
       "Fog Lights",
       "Memory Seats",
@@ -261,6 +269,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Extended Cab Pickup",
+    "diverType": "Dengan Sopir",
     "year": 2012,
     "options": [
       "CD (Multi Disc)",
@@ -293,6 +302,7 @@
     "transmission": "Manual",
     "available": true,
     "type": "Hatchback",
+    "diverType": "Lepas Kunci",
     "year": 2019,
     "options": [
       "Third Row Seats",
@@ -322,6 +332,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Coupe",
+    "diverType": "Lepas Kunci",
     "year": 2019,
     "options": [
       "Alloy Wheels",
@@ -355,6 +366,7 @@
     "transmission": "Automanual",
     "available": true,
     "type": "Passenger Van",
+    "diverType": "Dengan Sopir",
     "year": 2018,
     "options": [
       "Premium Sound",
@@ -391,6 +403,7 @@
     "transmission": "CVT",
     "available": true,
     "type": "SUV",
+    "diverType": "Lepas Kunci",
     "year": 2017,
     "options": [
       "Memory Seats",
@@ -420,6 +433,7 @@
     "transmission": "Manual",
     "available": false,
     "type": "Regular Cab Pickup",
+    "diverType": "Dengan Sopir",
     "year": 2020,
     "options": [
       "Bucket Seats",
@@ -452,6 +466,7 @@
     "transmission": "Automanual",
     "available": true,
     "type": "Regular Cab Pickup",
+    "diverType": "Lepas Kunci",
     "year": 2017,
     "options": [
       "Third Row Seats",
@@ -487,6 +502,7 @@
     "transmission": "Automanual",
     "available": true,
     "type": "Convertible",
+    "diverType": "Dengan Sopir",
     "year": 2021,
     "options": [
       "Leather Interior",
@@ -517,6 +533,7 @@
     "transmission": "Automanual",
     "available": false,
     "type": "Regular Cab Pickup",
+    "diverType": "Lepas Kunci",
     "year": 2015,
     "options": [
       "Alarm",
@@ -550,6 +567,7 @@
     "transmission": "CVT",
     "available": false,
     "type": "Sedan",
+    "diverType": "Dengan Sopir",
     "year": 2014,
     "options": [
       "Moonroof/Sunroof",
@@ -583,6 +601,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Convertible",
+    "diverType": "Lepas Kunci",
     "year": 2021,
     "options": [
       "CD (Single Disc)",
@@ -618,6 +637,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Crew Cab Pickup",
+    "diverType": "Dengan Sopir",
     "year": 2012,
     "options": [
       "Navigation",
@@ -649,6 +669,7 @@
     "transmission": "Manual",
     "available": false,
     "type": "SUV",
+    "diverType": "Lepas Kunci",
     "year": 2013,
     "options": [
       "Memory Seats",
@@ -679,6 +700,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Coupe",
+    "diverType": "Dengan Sopir",
     "year": 2020,
     "options": [
       "Memory Seats",
@@ -714,6 +736,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Extended Cab Pickup",
+    "diverType": "Dengan Sopir",
     "year": 2022,
     "options": [
       "Rear Window Defroster",
@@ -750,6 +773,7 @@
     "transmission": "Automatic",
     "available": false,
     "type": "Sedan",
+    "diverType": "Lepas Kunci",
     "year": 2022,
     "options": [
       "Moonroof/Sunroof",
@@ -782,6 +806,7 @@
     "transmission": "CVT",
     "available": false,
     "type": "Wagon",
+    "diverType": "Dengan Sopir",
     "year": 2015,
     "options": [
       "CD (Single Disc)",

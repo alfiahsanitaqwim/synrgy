@@ -18,6 +18,8 @@ const onReq = (req, res) => {
         readStaticFiles(url, res, "text/css", "UTF-8");
     }else if(url.match("\.png$")){
         readStaticFiles(url, res, "image/png")
+    }else if(url.match("\.jpg$")){
+        readStaticFiles(url, res, "image/jpg")
     }
 }
 
